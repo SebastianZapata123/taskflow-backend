@@ -6,6 +6,7 @@ const Tarea = require("./model/tareaModel");
 const app = express();
 // Importar las rutas
 const tareaRoutes = require("./routes/routes");
+const authRoutes = require("./routes/Auth.routes");
 
 // Middlewares para analizar JSON
 app.use(express.json());
@@ -25,6 +26,7 @@ mongoose
 // USO DE LAS RUTAS POST GET DELETE UPDATE
 
 app.use("/api", tareaRoutes);
+app.use("/auth", authRoutes);
 
 // Puerto del servidor
 const PORT = process.env.PORT || 3000;

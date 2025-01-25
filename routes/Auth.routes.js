@@ -1,4 +1,8 @@
+const express = require("express");
 const router = express.Router();
-import { crearUsuario } from "../auth/AuthController";
+const { crearUsuario, login } = require("../auth/AuthController");
 
-router.post("crearUsuario", crearUsuario);
+router.post("/crearUsuario", crearUsuario);
+router.post("/login", login);
+
+module.exports = router;
