@@ -4,6 +4,8 @@ const mongoose = require("mongoose");
 const Tarea = require("./model/tareaModel");
 
 const app = express();
+// Importar las rutas
+const tareaRoutes = require("./routes/routes");
 
 // Middlewares para analizar JSON
 app.use(express.json());
@@ -19,6 +21,10 @@ mongoose
     console.error("Error al conectar a MongoDB:", err);
     process.exit(1); // Salir del proceso si no se puede conectar a la base de datos
   });
+
+// USO DE LAS RUTAS POST GET DELETE UPDATE
+
+app.use("/api", tareaRoutes);
 
 // Puerto del servidor
 const PORT = process.env.PORT || 3000;

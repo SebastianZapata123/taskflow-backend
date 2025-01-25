@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 
 // Importar los controladores
-const crearTareaController = require("../controllers/crearTareaController");
+const crearTareaController = require("../controller/crearTareaController");
 
 // Rutas CRUD
 router.post("/tareas", crearTareaController);

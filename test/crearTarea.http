@@ -1,0 +1,10 @@
+POST http://localhost:3000/api/tareas
+Content-Type: application/json
+
+{
+  "titulo": "Revisar documentación",
+  "descripcion": "Leer y actualizar la documentación del proyecto.",
+  "prioridad": "HIGH",
+  "estado": "pending",
+  "personaEncargada": "Juan Pérez"
+}

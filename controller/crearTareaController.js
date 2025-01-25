@@ -1,4 +1,4 @@
-const Tarea = require("../models/tareaModel");
+const Tarea = require("../model/tareaModel");
 
 const crearTareaController = async (req, res) => {
   try {
