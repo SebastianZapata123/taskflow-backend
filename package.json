@@ -8,8 +8,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git remote add origin https://github.com/SebastianZapata123/taskflow-backend.git"
+    "url": "git+https://github.com/SebastianZapata123/taskflow-backend.git"
   },
   "author": "Sebastian Zapata",
-  "license": "ISC"
+  "license": "ISC",
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/SebastianZapata123/taskflow-backend/issues"
+  },
+  "homepage": "https://github.com/SebastianZapata123/taskflow-backend#readme",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.9.5"
+  }
 }
