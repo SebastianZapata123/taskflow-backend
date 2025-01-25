@@ -5,10 +5,12 @@ const router = express.Router();
 const crearTareaController = require("../controller/crearTareaController");
 const actualizarTareaController = require("../controller/actualizarTareaController");
 const obtenerTareasController = require("../controller/obtenerTareaController");
+const eliminarTareaController = require("../controller/eliminarTareaController");
 
 // Rutas CRUD
-router.post("/tareas", crearTareaController);
+router.post("/crear", crearTareaController);
 router.put("/actualizar/:id", actualizarTareaController);
-router.get("/listar", obtenerTareasController);
+router.get("/tareas", obtenerTareasController);
+router.delete("/eliminar/:id", eliminarTareaController);
 
 module.exports = router;

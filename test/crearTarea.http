@@ -1,10 +1,1 @@
-POST http://localhost:3000/api/tareas
-Content-Type: application/json
-
-{
-  "titulo": "Revisar documentación",
-  "descripcion": "Leer y actualizar la documentación del proyecto.",
-  "prioridad": "HIGH",
-  "estado": "pending",
-  "personaEncargada": "Juan Pérez"
-}
+DELETE http://localhost:3000/api/eliminar/67944a8ea67a9d4c0e2ef7fb
