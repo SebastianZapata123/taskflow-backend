@@ -1,6 +1,7 @@
 require("dotenv").config(); // Cargar variables de entorno
 const express = require("express");
 const mongoose = require("mongoose");
+const Tarea = require("./model/tareaModel");
 
 const app = express();
 
