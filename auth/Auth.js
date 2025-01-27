@@ -20,7 +20,7 @@ verificar.use((req, res, next) => {
         .json({ status: false, errors: ["Token no válido"] });
     }
     req.decoded = decoded; // Asigna los datos decodificados
-    next(); // Continúa al siguiente middleware o controlador
+    next();
   });
 });
 
